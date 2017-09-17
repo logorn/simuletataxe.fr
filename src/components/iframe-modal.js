@@ -1,9 +1,13 @@
 import { h, Component } from 'preact';
+import Motion from 'preact-motion';
 
 export default class IframeModal extends Component {
     render() {
         return (
             <div className="modal">
+                <Motion defaultStyle={{x: 0}} style={{x: spring(10)}}>
+                  {interpolatingStyle => <div style={interpolatingStyle} />}
+                </Motion>
                 <div className="modal__content">
                     <div className="modal__close">
                         <a href="javascript:void(0)"

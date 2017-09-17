@@ -49,5 +49,8 @@
   "browserslist": [
     "last 2 versions",
     "ios >= 8"
-  ]
+  ],
+  "dependencies": {
+    "preact-motion": "^1.1.0"
+  }
 }
