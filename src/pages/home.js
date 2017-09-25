@@ -95,8 +95,8 @@ export default class Home extends Component {
                 {this.state.error ? <div className="form-error">{this.state.error}</div> : ''}
 
                 <div className="home__field">
-                    <select onChange={this.handleStatusChange}>
-                        <option selected disabled>Ma situation familiale</option>
+                    <select onChange={this.handleStatusChange} value={this.state.status}>
+                        <option selected disabled value="">Ma situation familiale</option>
                         <option value={Calculator.STATUS_SINGLE}>Je suis célibataire</option>
                         <option value={Calculator.STATUS_MARRIED}>Je suis marié(e) ou pacsé(e)</option>
                         <option value={Calculator.STATUS_CONCUBINAGE}>Je suis en concubinage/colocation</option>
@@ -105,8 +105,8 @@ export default class Home extends Component {
                 </div>
 
                 <div className="home__field">
-                    <select onChange={this.handleDependentsChange}>
-                        <option selected disabled>Nombre de personnes à charge</option>
+                    <select onChange={this.handleDependentsChange} value={this.state.dependents}>
+                        <option selected disabled value="">Nombre de personnes à charge</option>
                         <option value="0">Aucune personne à charge</option>
                         <option value="1">1 personne à charge</option>
                         <option value="2">2 personnes à charge</option>
