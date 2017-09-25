@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import { route } from 'preact-router';
 
 import IconHandshake from '../components/icon-handshake';
 
@@ -20,7 +21,7 @@ export default class NoExoneration extends Component {
 
                 <div>
                     <button type="button"
-                            onClick={() => window.location.href = '/'}
+                            onClick={() => route('/')}
                             className="page__button page__button--small startover--no-reduction">
                         Recommencer
                     </button>

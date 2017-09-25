@@ -39,7 +39,7 @@ export default class Result extends Component {
 
                 <div>
                     <button type="button"
-                            onClick={() => window.location.href = '/'}
+                            onClick={() => route('/')}
                             className="page__button page__button--small startover--reduction">
                         Recommencer
                     </button>
